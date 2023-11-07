@@ -1,0 +1,44 @@
+###EXP 2
+# {
+#   books {
+#     id,
+#     title
+#   }
+# }
+
+
+###EXP 3
+# {
+#   todos{
+#     id,
+#     text,
+#     completed
+#   }
+# }
+
+###EXP 4
+# #ALL USERS
+# {
+#   users {
+#     id
+#     username
+#     email
+#   }
+# }
+# #SPECIFIC USER
+# {
+#   user(id: "1") {
+#     id
+#     username
+#     email
+#   }
+# }
+# #CREATE USER 
+# mutation {
+#   createUser(username: "newuser", email: "newuser@example.com") {
+#     id
+#     username
+#     email
+#   }
+# }
+
