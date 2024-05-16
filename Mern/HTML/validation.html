@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function validateForm() {
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (username === '') {
+                alert('Please enter a username');
+                return false;
+            }
+
+            if (email === '') {
+                alert('Please enter an email');
+                return false;
+            }
+
+            // Regular expression to validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email');
+                return false;
+            }
+
+            if (password === '') {
+                alert('Please enter a password');
+                return false;
+            }
+
+            // Additional validation rules for password
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters long');
+                return false;
+            }
+
+            return true; // Form is valid
+        }
+    </script>
+</head>
+
+<body bgcolor="yellow">
+    <div>
+        <form onsubmit="return validateForm()">
+            <center>
+                <label>User-Name:</label>&nbsp<input type="text" id="username" /><br />
+                <label>e-mail:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="email"
+                    id="email" /><br />
+                <label>Password:</label>&nbsp&nbsp&nbsp&nbsp<input type="password" id="password" /><br /><br />
+                <button type="submit">Register</button>
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>

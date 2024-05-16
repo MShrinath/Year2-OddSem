@@ -1,0 +1,14 @@
+body{
+    background-color: tan;
+    text-align: center;
+} 
+
+h1{
+    color: rgb(189, 16, 16);
+}
+
+#pic {
+    border: 2px;
+    padding: 4px;
+    border-color: yellow;
+}

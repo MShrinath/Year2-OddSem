@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #login-container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  #login-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  #content-container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  #logout-btn {
+    margin-top: 10px;
+  }
+  
+/*    
+   body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: red;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+p {
+  color: #666;
+} */
